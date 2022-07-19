@@ -589,7 +589,6 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--btn-txt-cl);
 }
 
