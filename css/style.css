@@ -189,11 +189,22 @@ img {
 
 .header-phone,
 .header-mail {
+  display: flex;
+  text-align: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--contacts-txt-cl);
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+.contact-icon:hover,
+.contact-icon:focus {
 }
 
 /* logo section */
@@ -222,6 +233,16 @@ img {
 .hero {
   display: flex;
   background-color: var(--dark-bg-cl);
+  outline: 1px solid red;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+
+  background-image: url(../images/hero/background.jpg),
+    linear-gradient(to right, rgb(255, 255, 255) 155px, rgba(25, 28, 38, 0.2) 155px);
+  background-repeat: no-repeat;
+  background-position: top right, center;
 }
 
 .main-title {
@@ -245,13 +266,54 @@ img {
   background-color: var(--light-bg-cl);
 }
 
+/* socials icons */
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  color: var(--btn-txt-cl);
+  background-color: var(--accent-txt-cl);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
 /* about section */
+
 .about-descr {
   padding-top: 0;
 }
 
 .about-item {
   width: 270px;
+}
+
+.about-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 .about-list {
@@ -271,6 +333,7 @@ img {
 }
 
 .about h3 {
+  margin-top: 30px;
   padding-bottom: 10px;
   font-family: var(--main-font);
   font-style: normal;
@@ -358,6 +421,54 @@ img {
   color: var(--contacts-txt-cl);
 }
 
+/* clients section */
+
+.clients {
+  display: flex;
+  padding-bottom: 81px;
+}
+
+.clients-title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--main-txt-cl);
+}
+
+.clients-list {
+  padding: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-item {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-icon:hover,
+.client-icon:focus {
+  color: var(--accent-txt-cl);
+  background-color: var(--btn-txt-cl);
+}
+
+.client-icon {
+  fill: currentColor;
+  margin: 16px 32px;
+}
+
 /* work section */
 
 .work {
@@ -400,7 +511,9 @@ img {
 
 .footer-container {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: normal;
+  align-items: baseline;
 }
 
 .footer-list {
@@ -463,4 +576,65 @@ img {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--btn-txt-cl);
+}
+
+.footer-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--btn-txt-cl);
+}
+
+.footer-left {
+  display: flex;
+  flex-wrap: wrap;
+  width: 231px;
+  margin-right: 70px;
+}
+
+.footer-right-list {
+  display: flex;
+  align-items: center;
+  justify-content: normal;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.socials-footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.socials-footer-link:hover,
+.socials-footer-link:focus {
+  color: var(--btn-txt-cl);
+  background-color: var(--accent-txt-cl);
+}
+
+.footer-icon {
+  fill: currentColor;
 }
